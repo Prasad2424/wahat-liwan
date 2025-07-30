@@ -93,6 +93,14 @@ body {
   box-shadow: 0px 1px 5px  white;
   scale: 1.1;
 }
+
+.projects_sector div {
+  transition: 0.3s;
+  opacity: 0;
+  animation: slidedown 0.7s ease-in-out forwards;
+  animation-delay: calc(0.4s * var(--delay));
+}
+
 @keyframes slideleft {
   0% {
     transform: translateX(100px);
@@ -125,6 +133,7 @@ body {
     height: 60px;
     padding: 0 15px 0 15px ;
     position: static;
+    background-color: rgb(225, 224, 224);
   }
 
   .navbar {
@@ -452,7 +461,13 @@ body {
 }
 
 #about{
-  background-image: url("/images/construction-banner.png");
+  background-image: url("/images/about-us-banner.png");
+  background-size: cover;
+  background-position: center;  
+}
+
+#services{
+  background-image: url("/images/services-banner.png");
   background-size: cover;
   background-position: center;  
 }

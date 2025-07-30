@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const [moreDetails, setMoreDetails] = useState(false);
-  const [viewProjects, setViewProjects] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [isMobile, setIsMobile] = useState(() => typeof window !== "undefined" && window.innerWidth < 642);
   const [closeBtn,setCloseBtn]=useState(false);
@@ -76,7 +75,7 @@ const Header = () => {
       )}
 
       {isNavVisible && (
-        <nav className={`w-3/4 width50 h-full flex justify-center items-center relative ${slideText}`}onMouseLeave={() => setViewProjects(false)} id="navbar"
+        <nav className={`w-3/4 width50 h-full flex justify-center items-center relative ${slideText}`} id="navbar"
         >
           {closeBtn && (
             <div
@@ -87,30 +86,14 @@ const Header = () => {
             </div>
           )}
           <ul className="navbar w-full h-full flex justify-end pr-8 items-center space-x-4 xl:space-x-20 lg:space-x-12 md:space-x-6 sm:space-x-8 text-8px  xl:text-[15px] lg:text-[15px]  md:text-[13px] sm:text-[11px] text-white font-semibold  "
-            onMouseLeave={() => setViewProjects(false)}
           >
-            <li className="h-full flex justify-center items-center"><Link href="/" style={{ "--delay": 1 } as React.CSSProperties} >HOME</Link></li>
-            <li className="h-full flex justify-center items-center "><Link href="/about-us" style={{ "--delay": 2 } as React.CSSProperties}>ABOUT US</Link></li>
-            <li className="h-full flex justify-center items-center "
-              onMouseLeave={() => setViewProjects(false)}>
-              <div
-                className="more_features relative "
-                onMouseEnter={() => setViewProjects(true)}
-                onClick={()=>setViewProjects(!viewProjects)}
-              >
-                <button className="mr-0 pr-2">PROJECTS</button>
-                <i className={viewProjects ? "bx bx-chevron-up" : "bx bx-chevron-down"}></i>
-                {viewProjects && (
-                  <div className="w-max absolute top-8  flex flex-col bg-gray-800 rounded p-2 shadow-md space-y-4 text-gray-200 left-0  text-black text-[8px] xl:text-[11px] lg:text-[10px] md:text-[9px] sm:text-[8px] rounded-lg
-                  xl:top-8 md:top-6 sm:top-4 space-y-1 lg:spaace-y-4 md:space-y-3 sm:space-y-2 ">
-                    <Link href="" className="" >ONGOING PROJECTS</Link>
-                    <Link href="" className="">COMPLETED PROJECTS</Link>
-                  </div>
-                )}
-              </div>
+            <li className="h-full flex justify-center items-center hover:text-orange-400"><Link href="/" style={{ "--delay": 1 } as React.CSSProperties} >HOME</Link></li>
+            <li className="h-full flex justify-center items-center hover:text-orange-400 "><Link href="/about-us" style={{ "--delay": 2 } as React.CSSProperties}>ABOUT US</Link></li>
+            <li className="h-full flex justify-center items-center hover:text-orange-400 "
+              ><Link href="/projects" style={{ "--delay": 3 } as React.CSSProperties}>PROJECTS</Link>
             </li>
-            <li className="h-full flex justify-center items-center "><Link href="/services" style={{ "--delay": 3 } as React.CSSProperties}>SERVICES</Link></li>
-            <li className="h-full flex justify-center items-center " 
+            <li className="h-full flex justify-center items-center hover:text-orange-400 "><Link href="/services" style={{ "--delay": 3 } as React.CSSProperties}>SERVICES</Link></li>
+            <li className="h-full flex justify-center items-center hover:text-orange-400 " 
                 onMouseLeave={() => setMoreDetails(false)}>
               <div
                 className="more_features relative "
@@ -120,18 +103,17 @@ const Header = () => {
                 <button className="mr-0 pr-2 " >MORE</button>
                 <i className={moreDetails ? "bx bx-chevron-up" : "bx bx-chevron-down"}></i>
                 {moreDetails && (
-                  <div className="w-max absolute top-8  flex flex-col bg-gray-800 rounded p-2 shadow-md space-y-4 text-gray-200 left-0  text-black text-[8px] xl:text-[11px] lg:text-[10px] md:text-[9px] sm:text-[8px] rounded-lg
+                  <div className="w-[100px] absolute top-8  flex flex-col bg-gray-800 rounded p-2 shadow-md space-y-4 text-gray-200 left-0  text-black text-[8px] xl:text-[11px] lg:text-[10px] md:text-[9px] sm:text-[8px] rounded-lg
                   xl:top-8 md:top-6 sm:top-4 space-y-1 lg:spaace-y-4 md:space-y-3 sm:space-y-2 ">
-                    <Link href="" className="" >GROUPS</Link>
-                    <Link href="" className="">CAST</Link>
-                    <Link href="" className="">COMITMENT TO QUALITY</Link>
-                    <Link href="/PETRA_PROFILE.pdf" className="">PROFILE</Link>
+                    <Link href="" className="hover:border-b border-gray-100 transition-100">CAST</Link>
+                    <Link href="" className="hover:border-b border-gray-100 transition-100">GALLERY</Link>
+                    <Link href="" className="hover:border-b border-gray-100 transition-100">PROFILE</Link>
                   </div>
                 )}
           
               </div>
             </li>
-            <li className="h-full flex justify-center items-center contact_us">
+            <li className="h-full flex justify-center items-center hover:text-orange-400 contact_us">
               <Link href="/contact-us">CONTACT-US</Link>
             </li>
           </ul>

@@ -4,8 +4,8 @@ import { Carousel } from 'react-responsive-carousel'
 import Image from '../../../node_modules/next/image'
 
 const banners = [
-  '/images/construction-banner.png',
-  '/images/construction-banner.png',
+  '/images/banner.png',
+  '/images/banner.png',
   '/images/banner.png'
 ]
 const HomeCarousel = () => {
@@ -33,25 +33,28 @@ const HomeCarousel = () => {
         className=""
       >
         {banners.map((src, i) => (
-          <div key={i} className="w-full h-[300px] xl:h-screen lg:h-screen md:h-screen sm:h-[610px] banner flex justify-center items-center ">
+          <div key={i} className="w-full h-[250px] xl:h-screen lg:h-screen md:h-[610px] sm:h-[610px] banner flex justify-center items-center ">
             <Image
               src={src}
               alt={`Banner ${i + 1}`}
               fill
-              className="object-fit"
+              className="object-cover"
               priority={i === 0}
             />
+                      </div>
+        ))}
+      </Carousel>
             <div className='w-full h-full absolute left-0 top-0 bg-gray-900 opacity-60 '></div>
-            <div className='xl:w-1/3 lg:w-[41%] md:w-[50%] sm:w-[50%] h-max absolute xl:left-1/7 xl:top-[40%] lg:left-1/8 lg:top-[40%] md:left-1/8  md:top-[50%] sm:left-1/9 sm:top-[50%] text-white  text-left p-2 width75 banner_content '>
+            <div className='xl:w-[40%] lg:w-[41%] md:w-[50%] sm:w-[50%] h-max absolute xl:left-1/14 xl:top-[40%] lg:left-1/8 lg:top-[40%] md:left-1/8  md:top-[50%] sm:left-1/9 sm:top-[50%] text-white  text-left p-2 width75 banner_content '>
               <h1 className='xl:text-[26px] lg:text-[22px] md:text-[18px] sm:text-[14px] tracking-wider font-semibold slide-left welcomeText'>Hello,Welcome to </h1>
               <div className='slide-right h-max '>
                 <div className='w-max space-y-0 xl:space-y2 lg:space-y-2 md:space-1.5 sm:space-y-1'>
                   <h1 className='xl:h-[50px] lg:h-[42px] md:h-[34px] sm:h-[29px]  xl:text-[50px] lg:text-[42px] md:text-[36px] sm:text-[30px] font-bold titleText height22'><span className="bg-gradient-to-r from-orange-400 via-orange-00 to-blue-500 bg-clip-text text-transparent titleHeight">
-                    PETRA OASIS
+                    A-Z SERVICES
                   </span></h1>
                   <h2 className='w-full text-right xl:text-[13px] 
                   lg:text-[12px] md:text-[11px] sm:text-[8px] font-semibold subtitle'><span className="bg-gradient-to-r from-blue-400  to-blue-400 bg-clip-text text-transparent ">
-                    ELCTROMECHANICAL WORKS L.L.C
+                    ELCTROMECHANICAL WORKS 
                   </span></h2>
                 </div>
               </div>
@@ -67,9 +70,6 @@ const HomeCarousel = () => {
                 </button>
               </div>
             </div>
-          </div>
-        ))}
-      </Carousel>
     </div>
   )
 

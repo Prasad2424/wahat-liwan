@@ -23,8 +23,7 @@ export const corevalues = [
     {
         'image': '/target.png',
         'title': 'Our Mission',
-        'about': 'Our mission is that with our credibility, commitment, quality, cost efficiency, capability and financial soundness, with abundant resources of highly skilled and self-motivated engineers and staff make us a perfect choice for solving any kind of electro-mechanical work requirements in major projects and our proven record of performance and credentials in the past years evidence our capability to endeavor any value projects.'
-
+        'about': 'Our mission is that with our credibility, commitment, quality, cost efficiency, capability and financial soundness, with abundant resources of highly skilled and self-motivated engineers and staff make us a perfect choice for solving any kind of electro-mechanical work'
     },
     {
         'image': '/target.png',
@@ -40,8 +39,13 @@ export const corevalues = [
     },
     {
         'image': '/target.png',
+        'title': 'Experience',
+        'about': 'We have 10+ years of the Experience in Residential,commercial,industrial Construnctions and other constructions.'
+    },
+    {
+        'image': '/target.png',
         'title': 'Safety',
-        'about': 'Petra Oasis Tech Cont. Safety Culture is Great and We Follow All the Rules, that’s the reason we have no safety incidents in our entire tenure. “Safety First” for all employees is embedded in ourcompany culture from top to bottom.'
+        'about': 'AZ services Tech Cont. Safety Culture is Great and We Follow All the Rules, that’s the reason we have no safety incidents in our entire tenure. “Safety First” for all employees is embedded in ourcompany culture from top to bottom.'
     },
 
 ]
@@ -95,7 +99,7 @@ export const contact = [
     {
         'image': '/email.png',
         'title': 'Mail Us',
-        'about': 'info@petraoasis.com, Raju@petraoasis.com'
+        'about': 'info@azservices.com, Raju@azservices.com'
     }
 ]
 
@@ -103,18 +107,18 @@ export const contact = [
 export const Persons = [
     {
         "imageurl": "/images/construction-banner.png",
-        "name": "Er. A K Ayube",
+        "name": "R.Rakesh",
         "specialization": "B.tech(Civil),M.tech(structure)"
     },
     {
         "imageurl": "/images/construction-banner.png",
-        "name": "Er. A K ",
-        "specialization": "B.tech(Civil),M.tech(structure)"
+        "name": "M.Nagesh ",
+        "specialization": "B.tech(Electrical),M.Tech(power Systems)"
     },
     {
         "imageurl": "/images/construction-banner.png",
-        "name": "Er. A K A",
-        "specialization": "B.tech(Civil),M.tech(structure)"
+        "name": "E.Sharma",
+        "specialization": "B.tech(Mechanical),M.tech(Thermel Engineering)"
     }
 ]
 
