@@ -7,6 +7,15 @@ import { services, Service } from '../export';
 
 const ServicesPage: React.FC = () => {
   return (
+    <section className='w-full flex flex-col '>
+      <div className='w-full h-screen' id="services">
+        <div className='w-full h-full  opacity-100 flex items-end '>
+          <div className='w-full h-[100px] border flex justify-between items-center px-18 opacity-100'>
+            <div className=' w-1/2 text-white  text-[30px] font-bold slide-right'></div>
+            <div className='text-white text-[25px] font-bold opacity-100 slide-left flex items-center justify-center'></div>
+          </div>
+        </div>
+      </div>
     <div
       id="services"
       className="w-full flex flex-col justify-center items-center gap-20 bg-cover h-fit py-20 px-4 sm:px-6 lg:px-20 bg-center"
@@ -59,6 +68,7 @@ const ServicesPage: React.FC = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
