@@ -18,7 +18,7 @@ const ContactSection = () => {
             <div className='w-max font-semibold flex items-center space-x-2 '>
               <i className='bx bxs-phone xl:text-[40px]
               lg:text-[38px] md:text-[30px] sm:text-[24px] font-bold text-orange-600  contact-icon'></i>
-              <a href="tel:+971509754442" className='hover:text-blue-500 text-[14px]
+              <a href="tel:+971509754442" className='hover:text-green-900 text-[14px]
               xl:text-[14px] lg:text-[13px]
               md:text-[12px] sm:text-[11px] font10'>+919112893839</a >
             </div>
@@ -28,9 +28,9 @@ const ContactSection = () => {
             <div className='font-semibold flex items-center space-x-2 '>
               <i className='bx bxs-envelope xl:text-[40px]
               lg:text-[38px] md:text-[30px] sm:text-[24px] font-bold text-orange-600  contact-icon'></i>
-              <a href="mailto:info@azservices.com" className='hover:text-blue-500 text-[14px]
+              <a href="mailto:wahatliwantechllc@gmail.com" className='hover:text-blue-500 text-[14px]
               xl:text-[14px] lg:text-[13px]
-              md:text-[12px] sm:text-[11px] font10'>info@azservices.com</a >
+              md:text-[12px] sm:text-[11px] font10'>wahatliwantechllc@gmail.com</a>
             </div>
           </div>
         </div>

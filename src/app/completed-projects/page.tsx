@@ -7,10 +7,6 @@ import { completedProjects } from '../export';
 const CompletedProjects: React.FC = () => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-20 py-12 bg-white">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">
-        Completed Projects
-      </h2>
-
       {completedProjects.map((group, index) => (
         <div key={index} className="mb-16">
           <h3 className="text-3xl font-semibold text-center text-black mb-10">

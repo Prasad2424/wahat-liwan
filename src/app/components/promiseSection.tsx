@@ -19,7 +19,7 @@ const PromiseSection = () => {
   return (
     <section
       id="promises"
-      className="w-full flex flex-col items-center justify-center gap-2 bg-cover bg-center py-12"
+      className="w-full flex flex-col items-center justify-center gap-2 bg-cover bg-center py-12 bg-white"
     >
       <h1
         data-aos="zoom-in"
@@ -31,7 +31,7 @@ const PromiseSection = () => {
       <div
         data-aos="zoom-in"
         data-aos-delay="200"
-        className="w-full  flex flex-wrap  space-y-2  items-center justify-center "
+        className="w-full  flex flex-wrap  gap-y-6 xl:gap-y-2 lg:gap-y-2 md:gap-y-2 sm:gap-y-4  items-center justify-center "
       >
         {ourpromises.map((item) => (
         <div key={item.title} className="promise_card xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-[45%] h-[450px]

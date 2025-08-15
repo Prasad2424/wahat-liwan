@@ -2,14 +2,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { usePathname } from 'next/navigation';
+
 
 const Header = () => {
   const [moreDetails, setMoreDetails] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [isMobile, setIsMobile] = useState(() => typeof window !== "undefined" && window.innerWidth < 642);
-  const [closeBtn,setCloseBtn]=useState(false);
-  const [menuButton,setMenuButton]=useState(false);
+  const [closeBtn, setCloseBtn] = useState(false);
+  const [menuButton, setMenuButton] = useState(false);
   const [slideText, setSlideText] = useState("");
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,9 +23,9 @@ const Header = () => {
     };
 
     setTimeout(() => {
-      handleResize(); 
+      handleResize();
     }, 0);
-  
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -35,7 +38,7 @@ const Header = () => {
     setMenuButton(true);
   };
 
-  const menuClick=()=>{
+  const menuClick = () => {
     setIsNavVisible(true);
     setCloseBtn(true);
     setIsMobile(false);
@@ -45,22 +48,22 @@ const Header = () => {
 
   useEffect(() => {
     document.body.style.overflow = !isMobile && isNavVisible && closeBtn ? "hidden" : "";
-  }, [isMobile, isNavVisible,closeBtn]);
+  }, [isMobile, isNavVisible, closeBtn]);
 
   useEffect(() => {
     return () => {
       document.body.style.overflow = '';
     };
   }, []);
-  
-  
+
+
   return (
     <header className="w-full h-[100px] flex justify-center  bg-transparent absolute left-0 top-0 z-50 text-white ">
-      <div className="w-1/4 h-full flex items-center justify-center companylogo  ">
+      <div className="w-1/3 h-full flex items-center justify-center companylogo  ">
         <Link href="/" className=" w-full h-[90%]
         xl:w-[95%] xl:h-[90%]  lg:w-[90%] lg:h-[80%] md:w-full md:h-3/4 sm:w-full sm:h-[70%] relative overflow-hidden">
           <Image
-            src="/images/companylogo.png"
+            src="/images/logo.png"
             alt="Company Logo"
             fill
             className="object-fit"
@@ -85,16 +88,20 @@ const Header = () => {
               &times;
             </div>
           )}
-          <ul className="navbar w-full h-full flex justify-end pr-8 items-center space-x-4 xl:space-x-20 lg:space-x-12 md:space-x-6 sm:space-x-8 text-8px  xl:text-[15px] lg:text-[15px]  md:text-[13px] sm:text-[11px] text-white font-semibold  "
+          <ul className="navbar w-full h-full flex justify-end pr-8 items-center space-x-4 xl:space-x-14 lg:space-x-12 md:space-x-6 sm:space-x-4 text-8px  xl:text-[13px] lg:text-[13px]  md:text-[11px] sm:text-[9px] text-white font-semibold  "
           >
-            <li className="h-full flex justify-center items-center hover:text-orange-400"><Link href="/" style={{ "--delay": 1 } as React.CSSProperties} >HOME</Link></li>
-            <li className="h-full flex justify-center items-center hover:text-orange-400 "><Link href="/about-us" style={{ "--delay": 2 } as React.CSSProperties}>ABOUT US</Link></li>
-            <li className="h-full flex justify-center items-center hover:text-orange-400 "
-              ><Link href="/projects" style={{ "--delay": 3 } as React.CSSProperties}>PROJECTS</Link>
+            <li className={`h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400 ${pathname === '/' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}
+            ><Link href="/" style={{ "--delay": 3 } as React.CSSProperties}>HOME</Link>
             </li>
-            <li className="h-full flex justify-center items-center hover:text-orange-400 "><Link href="/services" style={{ "--delay": 3 } as React.CSSProperties}>SERVICES</Link></li>
-            <li className="h-full flex justify-center items-center hover:text-orange-400 " 
-                onMouseLeave={() => setMoreDetails(false)}>
+            <li className={`h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400 ${pathname === '/about-us' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}>
+              <Link href="/about-us">ABOUT US</Link>
+            </li>
+            <li className={`h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400 ${pathname === '/projects' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}
+            ><Link href="/projects" style={{ "--delay": 3 } as React.CSSProperties}>PROJECTS</Link>
+            </li>
+            <li className={`h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400 ${pathname === '/services' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}><Link href="/services" style={{ "--delay": 3 } as React.CSSProperties}>SERVICES</Link></li>
+            <li className="h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400"
+              onMouseLeave={() => setMoreDetails(false)}>
               <div
                 className="more_features relative "
                 onMouseEnter={() => setMoreDetails(true)}
@@ -105,18 +112,19 @@ const Header = () => {
                 {moreDetails && (
                   <div className="w-[100px] absolute top-8  flex flex-col bg-gray-800 rounded p-2 shadow-md space-y-4 text-gray-200 left-0  text-black text-[8px] xl:text-[11px] lg:text-[10px] md:text-[9px] sm:text-[8px] rounded-lg
                   xl:top-8 md:top-6 sm:top-4 space-y-1 lg:spaace-y-4 md:space-y-3 sm:space-y-2 ">
-                    <Link href="" className="hover:border-b border-gray-100 transition-100">CAST</Link>
-                    <Link href="" className="hover:border-b border-gray-100 transition-100">GALLERY</Link>
-                    <Link href="" className="hover:border-b border-gray-100 transition-100">PROFILE</Link>
+                    <Link href="" className=" hover:underline hover:underline-offset-[12px] hover:text-green-400 ">CAST</Link>
+                    <Link href="" className=" hover:underline hover:underline-offset-[12px] hover:text-green-400 ">GALLERY</Link>
+                    <Link href="" className=" hover:underline hover:underline-offset-[12px] hover:text-green-400 ">PROFILE</Link>
                   </div>
                 )}
-          
+
               </div>
             </li>
-            <li className="h-full flex justify-center items-center hover:text-orange-400 contact_us">
-              <Link href="/contact-us">CONTACT-US</Link>
-            </li>
+            <button className="w-[160px] h-max p-2 px-6 rounded-2xl flex justify-center items-center text-black  bg-green-500 font-bold">
+            <Link href="/contact-us">GET IN TOUCH</Link>
+          </button>
           </ul>
+          
         </nav>
       )}
     </header>
