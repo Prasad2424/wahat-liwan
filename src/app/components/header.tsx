@@ -104,7 +104,7 @@ const Header = () => {
                   <div className="w-max absolute top-8  flex flex-col bg-gray-800 rounded p-2 shadow-md space-y-4 text-gray-200 left-0  text-black text-[8px] xl:text-[11px] lg:text-[10px] md:text-[9px] sm:text-[8px] rounded-lg
                   xl:top-8 md:top-6 sm:top-4 space-y-1 lg:spaace-y-4 md:space-y-3 sm:space-y-2 ">
                     <Link href="" className="" >ONGOING PROJECTS</Link>
-                    <Link href="" className="">COMPLETED PROJECTS</Link>
+                    <Link href="/completed-projects" className="">COMPLETED PROJECTS</Link>
                   </div>
                 )}
               </div>
@@ -124,7 +124,7 @@ const Header = () => {
                   xl:top-8 md:top-6 sm:top-4 space-y-1 lg:spaace-y-4 md:space-y-3 sm:space-y-2 ">
                     <Link href="" className="" >GROUPS</Link>
                     <Link href="" className="">CAST</Link>
-                    <Link href="" className="">COMITMENT TO QUALITY</Link>
+                    <Link href="/commitment" className="">COMITMENT TO QUALITY</Link>
                     <Link href="/PETRA_PROFILE.pdf" className="">PROFILE</Link>
                   </div>
                 )}

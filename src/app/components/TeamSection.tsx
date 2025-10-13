@@ -14,7 +14,7 @@ const TeamSection = () => {
                 </div>
                 <div className='flex justify-center xl:space-x-4 lg:space-x-4 md:sapce-x-3 sm:space-x-5  space-y-4  flex-wrap '>
                     {Persons.map((item) => (
-                        <div className='w-[80%] xl:w-1/4 h-[150px] xl:h-[350px] lg:h-[340px] md:h-[330 px] sm:h-[320px] lg:w-[32%] md:w-[40%] sm:w-[42%]  ' key={item.name}>
+                        <div className='w-full xl:w-1/4 h-[150px] xl:h-[350px] lg:h-[340px] md:h-[330 px] sm:h-[320px] lg:w-[32%] md:w-[40%] sm:w-[42%]  ' key={item.name}>
                             <Person imageurl={item.imageurl} name={item.name} specialization={item.specialization} />
                         </div>
                     ))}
