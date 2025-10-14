@@ -1,11 +1,13 @@
 
 'use client';
 
-import React from 'react';
+import React,{useRef} from 'react';
 import Image from 'next/image';
 import { services, Service } from '../export';
 
 const ServicesPage: React.FC = () => {
+  const servicesRef = useRef<HTMLDivElement>(null);
+
   return (
     <section className='w-full flex flex-col '>
       <div className="w-full h-[300px] xl:h-screen lg:h-screen md:h-[620px] sm:h-[500px]   relative ">
@@ -25,14 +27,14 @@ const ServicesPage: React.FC = () => {
             </p>
           </div>
           <div className='w-full'>
-          <button className="xl:text-[17px] lg:text-[15px] md:text-[14px] sm:text-[11px] xl:px-6 xl:py-2 lg:px-5 lg:py-1.5  md:px-3 md:py-1 sm:px-2.5 sm:py-0.5  font-medium rounded-sm transition duration-300 cursor-pointer slide-right font12 bg-green-700 hover:scale-105">
-                  More about us
+          <button className="xl:text-[17px] lg:text-[15px] md:text-[14px] sm:text-[11px] xl:px-6 xl:py-2 lg:px-5 lg:py-1.5  md:px-3 md:py-1 sm:px-2.5 sm:py-0.5  font-medium rounded-sm transition duration-300 cursor-pointer slide-right font12 bg-green-700 hover:scale-105" onClick={() => servicesRef.current?.scrollIntoView({ behavior: 'smooth' })}
+> Our Servies
                 </button>
           </div>
         </div>
       </div>
     <div
-      id="services"
+      ref={servicesRef}
       className="w-full flex flex-col justify-center items-center gap-20 bg-cover h-fit py-20 px-4 sm:px-6 lg:px-20 bg-center"
       style={{ backgroundImage: `url('/service.png')` }}
     >

@@ -47,7 +47,7 @@ const ProjectSection = () => {
       xl:flex-row lg:flex-row md:flex-row sm:flex-row bg-gray-50 jusify-center items-center">
         <div className="w-[90%] xl:w-[40%] lg:w-[40%] md:w-[40%] sm:w-[40%] h-[90%] flex justify-center items-center">
             <div className="w-[80%] h-[80%] relative rounded-lg overflow-hidden">
-              <Image src="/images/companybanner.png" alt="customers" fill className="object-cover"/>
+              <Image src="/images/happyclients.jpeg" alt="customers" fill className="object-cover"/>
             </div>
         </div>
         <div className="w-[90%] xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[60%]  h-[90%] flex flex-col justify-evenly items-center  ">

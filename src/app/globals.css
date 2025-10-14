@@ -445,6 +445,7 @@ body {
   }
   .footer_section{
     width: 100% !important;
+    height: 250px;
   }
 }
 

@@ -1,9 +1,11 @@
 'use client'
+import React,{useRef,useState} from 'react'
 import Image from 'next/image'
-import  { useState } from 'react'
 import CompletedProjects from '../completed-projects/page'
 
 const ProjectsPage = () => {
+  const projectsRef = useRef<HTMLDivElement>(null);
+
   const[completedProjects, setCompletedProjects] = useState(false);
   const [ongoingProjects, setOngoingProjects] = useState(false);
   return (
@@ -25,14 +27,15 @@ const ProjectsPage = () => {
             </p>
           </div>
           <div className='w-full'>
-          <button className="xl:text-[17px] lg:text-[15px] md:text-[14px] sm:text-[11px] xl:px-6 xl:py-2 lg:px-5 lg:py-1.5  md:px-3 md:py-1 sm:px-2.5 sm:py-0.5  font-medium rounded-sm transition duration-300 cursor-pointer slide-right font12 bg-green-700 hover:scale-105">
+          <button className="xl:text-[17px] lg:text-[15px] md:text-[14px] sm:text-[11px] xl:px-6 xl:py-2 lg:px-5 lg:py-1.5  md:px-3 md:py-1 sm:px-2.5 sm:py-0.5  font-medium rounded-sm transition duration-300 cursor-pointer slide-right font12 bg-green-700 hover:scale-105" onClick={() => projectsRef.current?.scrollIntoView({ behavior: 'smooth' })}
+>
                   View Projects
                 </button>
           </div>
         </div>
       </div>
 
-      <div>
+      <div ref={projectsRef}>
         <div className='w-full h-[150px] gap-x-14 text-[28px] flex items-center justify-center font-semibold '>
         <button className='border p-4 rounded-lg shadow-md  cursor-pointer bg-gradient-to-r from-gray-200 to-gray-100' onClick={()=>{setOngoingProjects(true);setCompletedProjects(true)}}>ALL </button>
           <button className='border p-4 rounded-lg shadow-md  cursor-pointer bg-gradient-to-r from-gray-200 to-gray-100' onClick={()=>{setOngoingProjects(true);setCompletedProjects(false)}}>ONGOING PROJECTS </button>

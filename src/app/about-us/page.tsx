@@ -1,14 +1,17 @@
 'use client';
 
-import React from 'react';
+import React,{useRef} from 'react';
 import Image from 'next/image';
 import { about } from '../export';
 
+
 const AboutUs = () => {
+  const aboutRef = useRef<HTMLDivElement>(null);
+
   return (
     <section
       className="w-full bg-white flex flex-col space-y-8 "  
-    >
+    > 
       <div className="w-full h-[300px] xl:h-screen lg:h-screen md:h-[620px] sm:h-[500px]   relative ">
         <Image src="/images/hospitalbanner.png" alt={"pic"} fill className="object-fill xl:object-cover lg:object-cover md:object-fill sm:object-cover" />
         <div className="w-full h-full absolute left-0 top-0 bg-gray-900 opacity-60 "></div>
@@ -26,13 +29,14 @@ const AboutUs = () => {
             </p>
           </div>
           <div className='w-full'>
-          <button className="xl:text-[17px] lg:text-[15px] md:text-[14px] sm:text-[11px] xl:px-6 xl:py-2 lg:px-5 lg:py-1.5  md:px-3 md:py-1 sm:px-2.5 sm:py-0.5  font-medium rounded-sm transition duration-300 cursor-pointer slide-right font12 bg-green-700 hover:scale-105">
+          <button className="xl:text-[17px] lg:text-[15px] md:text-[14px] sm:text-[11px] xl:px-6 xl:py-2 lg:px-5 lg:py-1.5  md:px-3 md:py-1 sm:px-2.5 sm:py-0.5  font-medium rounded-sm transition duration-300 cursor-pointer slide-right font12 bg-green-700 hover:scale-105" onClick={() => aboutRef.current?.scrollIntoView({ behavior: 'smooth' })}>
                   More about us
                 </button>
           </div>
         </div>
       </div>
-      <div className="w-full xl:w-[90%] lg:w-[90%] md:w-[95%] sm:w-full mx-auto  rounded-lg shadow-lg p-8 bg-white" id='about-us'>
+      <div className="w-full xl:w-[90%] lg:w-[90%] md:w-[95%] sm:w-full mx-auto  rounded-lg shadow-lg p-8 bg-white" ref={aboutRef}
+>
         <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold text-center text-black mb-16">
           About Us
         </h2>

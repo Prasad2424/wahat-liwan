@@ -1,20 +1,20 @@
 export const ourpromises = [
     {
-        'image': '/images/promiseimage1.png',
-        'title': 'Our Promise as a contractor is to build your project',
-        'description': 'The process of commercial building construction involves designing, planning, and constructing buildings intended for commercial use. These structures serve various purposes, such as retail stores, office buildings and educational institutions.',
+        'image': '/images/promise1.jpeg',
+        'title': 'Skilled Electricians for Every Project',
+        'description': 'We provide certified electricians for residential, commercial, and industrial projects. From wiring and panel installations to maintenance and troubleshooting, our team ensures safety, compliance, and precision.',
         'label': 'Read More'
     },
     {
-        'image': '/images/promiseimage2.png',
-        'title': 'Professional Homes Constructions',
-        'description': 'The construction process includes several stages: site selection and preparation, architectural design, engineering, material procurement, actual construction, and commissioning.',
+        'image': '/images/promise2.jpeg',
+        'title': 'Expert Ducting & Ventilation Services',
+        'description': 'Our ducting specialists handle everything from layout planning to installation of HVAC systems. Whether it’s GI ducting, flexible ducts, or insulation, we deliver efficient airflow and climate control tailored to your building’s needs.',
         'label': 'Read More'
     },
     {
-        'image': '/images/promiseimage3.png',
-        'title': 'Architecture Design',
-        'description': 'Collaboration among professionals—such as architects, engineers, contractors, and subcontractors—is crucial to ensure compliance with local building codes and regulations.',
+        'image': '/images/manpower.png',
+        'title': 'Reliable Workforce, On-Demand',
+        'description': 'We supply trained technicians, electricians, and ducting experts for short-term and long-term projects. Our manpower solutions are flexible, scalable, and backed by technical supervision to meet your project timelines.',
         'label': 'Read More'
     },
 ]
@@ -23,12 +23,12 @@ export const corevalues = [
     {
         'image': '/images/mission.png',
         'title': 'Our Mission',
-        'about': 'Our mission is that with our credibility, commitment, quality, cost efficiency, capability and financial soundness, with abundant resources of highly skilled and self-motivated engineers and staff make us a perfect choice for solving any kind of electro-mechanical work'
+        'about': 'Our mission is to deliver reliable, cost-effective, and high-quality technical manpower for electrical and HVAC projects. Backed by skilled engineers, certified technicians, and a commitment to safety and precision, we are the trusted partner for electro-mechanical solutions across residential, commercial, and industrial sectors.'
     },
     {
         'image': '/images/house.png',
-        'title': 'Residential',
-        'about': 'Residential construction involves building homes, apartments, and other dwellings. It’s a dynamic industry shaping our living spaces globally.',
+        'title': 'Electrical & Ducting Services',
+        'about': 'We specialize in supplying expert electricians and ducting technicians for infrastructure projects. From cable tray installations to GI duct fabrication and DB dressing, our workforce powers the systems that keep buildings functional and efficient',
         'points': [
             "Foster a professional and ethical work environment.",
             "Set safety and quality as our top priorities.",
@@ -40,12 +40,12 @@ export const corevalues = [
     {
         'image': '/images/experience.jpeg',
         'title': 'Experience',
-        'about': 'We have 10+ years of the Experience in Residential , commercial , industrial Construnctions and other constructions.'
+        'about': 'With over 10 years of hands-on experience in manpower deployment, electrical installations, and ducting works, we’ve supported major developments across the UAE and India. Our team is trained, certified, and ready to meet the demands of any scale'
     },
     {
         'image': '/images/safety.png',
         'title': 'Safety',
-        'about': 'Wahat Liwan Technical Services L.L.C Safety Culture is Great and We Follow All the Rules, that’s the reason we have no safety incidents in our entire tenure. “Safety First” for all employees is embedded in ourcompany culture from top to bottom.'
+        'about': 'At Wahat Liwan Technical Services LLC, safety isn’t a checkbox—it’s our foundation. We follow strict protocols and industry standards to ensure zero incidents across all projects. “Safety First” is embedded in our culture, from field technicians to senior engineers.'
     },
 
 ]
@@ -55,39 +55,39 @@ export const projects = [
         'image': '/images/commercial-building.png',
         'banner':'/images/commercialbanner.png',
         'title': 'Commercial',
-        'about': 'These structures serve various purposes, such as retail stores, office buildings, warehouses, hotels, hospitals, and educational institutions.'
+        'about': 'We support commercial projects with skilled electricians and ducting technicians for retail spaces, office buildings. '
 
     },
     {
         'image': '/images/residential.png',
         'banner':'/images/companybanner.png',
         'title': 'Residential',
-        'about': 'Residential construction involves building homes, apartments, and other dwellings. It’s a dynamic industry shaping our living spaces globally.'
+        'about': 'From apartments to villas, we provide certified manpower for electrical wiring, DB dressing, and ducting solutions. .'
     },
     {
         'image': '/images/industrial.png',
         'banner':'/images/industrailbanner.png',
         'title': 'Industrial',
-        'about': 'Industrial properties cater to manufacturing, warehousing, and logistics needs Examples: factories, distribution centers, and industrial parks.'
+        'about': 'Industrial sites demand precision and durability. We supply trained professionals for every    installations,'
     },
     {
         'image': '/images/educational.png',
         'banner':'/images/educationalbanner.png',
         'title': 'Educational',
-        'about': 'Educational properties serve learning institutions. Examples: schools, colleges, and universities.'
+        'about': 'We provide skilled manpower for electrical and ducting installations in schools, colleges, and universities.'
 
     },
     {
         'image': '/images/hospital.png',
         'banner':'/images/hospitalitybannner.png',
         'title': 'Hospitality',
-        'about': 'Hospitality properties provide lodging, dining, and leisure services. Examples: hotels, restaurants, and resorts.'
+        'about': ' Our team delivers expert ducting and electrical services that support guest comfort, operational efficiency, and safety.'
     },
     {
         'image': '/images/medical.png',
         'banner':'/images/hospitalbanner.png',
         'title': 'Medical',
-        'about': 'Medical properties support healthcare services. Examples: hospitals, clinics, and medical office buildings.'
+        'about': ' We supply certified electricians and ducting specialists for hospitals and clinics, ensuring uninterrupted power, and clean airflow'
     }
 ]
 

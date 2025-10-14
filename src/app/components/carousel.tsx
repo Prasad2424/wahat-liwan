@@ -3,16 +3,21 @@ import React, { useEffect, useState } from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import Image from '../../../node_modules/next/image'
 
+type HomeCarouselProps = {
+  onReadMoreClick: () => void;
+};
+
+
 const banners = [
   '/images/companybanner.png',
   '/images/companybanner.png',
 ]
-const HomeCarousel = () => {
+const HomeCarousel = ({ onReadMoreClick }: HomeCarouselProps)  => {
   const SLIDE_DURATION_MS = 10000
 
-  const [animate, setAnimate] = useState(false)
-
-  useEffect(() => {
+  const [animate, setAnimate] = useState(false);
+  
+   useEffect(() => {
     setAnimate(true)
   }, [])
 
@@ -64,7 +69,7 @@ const HomeCarousel = () => {
                   electro-mechanical work requirements in major projects.....</p>
               </div>
               <div className='w-full'>
-                <button className="xl:text-[17px] lg:text-[15px] md:text-[14px] sm:text-[11px] xl:px-6 xl:py-2 lg:px-5 lg:py-1.5  md:px-3 md:py-1 sm:px-2.5 sm:py-0.5  font-medium rounded-sm transition duration-300 cursor-pointer slide-right font12 bg-green-700 hover:scale-105">
+                <button className="xl:text-[17px] lg:text-[15px] md:text-[14px] sm:text-[11px] xl:px-6 xl:py-2 lg:px-5 lg:py-1.5  md:px-3 md:py-1 sm:px-2.5 sm:py-0.5  font-medium rounded-sm transition duration-300 cursor-pointer slide-right font12 bg-green-700 hover:scale-105" onClick={onReadMoreClick}>
                   Read More
                 </button>
               </div>

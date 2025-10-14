@@ -58,10 +58,10 @@ const Header = () => {
 
 
   return (
-    <header className="w-full h-[100px] flex justify-center  bg-transparent absolute left-0 top-0 z-50 text-white ">
-      <div className="w-1/3 h-full flex items-center justify-center companylogo  ">
-        <Link href="/" className=" w-full h-[90%]
-        xl:w-[95%] xl:h-[90%]  lg:w-[90%] lg:h-[80%] md:w-full md:h-3/4 sm:w-full sm:h-[70%] relative overflow-hidden">
+    <header className="w-full h-[150px] flex justify-between  absolute left-0 top-0 z-50 text-white ">
+      <div className="w-[30%] h-[150px] xl:h-[100%] lg:h-[95%] md:h-[85%] sm:h-[55%] flex items-center justify-center companylogo  ">
+        <Link href="/" className=" w-[50%] h-[100%]  
+        xl:w-[30%]  xl:h-[70%]  lg:w-[30%] lg:h-[70%] md:w-[30%] md:h-[60%] sm:w-[30%] sm:h-[60%] relative overflow-hidden ">
           <Image
             src="/images/logo.png"
             alt="Company Logo"
@@ -69,6 +69,17 @@ const Header = () => {
             className="object-fit"
           />
         </Link>
+        <div className='slide-right h-[80%] xl:h-[60%] lg:h-[60%] md:h-[60%] sm:h-[60%] w-[60%] '>
+                <div className='w-max  xl:space-y-2 lg:space-y-2 md:space-1.5 sm:space-y-1'>
+                  <h1 className='h-[32px] xl:h-[45px] lg:h-[42px] md:h-[34px] sm:h-[29px] text-[26px] xl:text-[45px] lg:text-[38px] md:text-[32px] sm:text-[25px] font-bold  '><span className="bg-gradient-to-r from-green-500 via-green-00 to-green-600  bg-clip-text text-transparent ">
+                    WAHAT LIWAN
+                  </span></h1>
+                  <h2 className='w-full text-right xl:text-[17px] 
+                  lg:text-[12px] md:text-[11px] sm:text-[8px] text-[7px] font-bold '><span className="bg-gradient-to-r from-gray-400  to-gray-400 bg-clip-text text-transparent ">
+                     TECHNICAL SERVICES L.L.C
+                  </span></h2>
+                </div>
+              </div>
       </div>
 
       {isMobile && menuButton && (
@@ -78,7 +89,7 @@ const Header = () => {
       )}
 
       {isNavVisible && (
-        <nav className={`w-3/4 width50 h-full flex justify-center items-center relative ${slideText}`} id="navbar"
+        <nav className={`w-[70%] width50 h-[80%] xl:h-[100%] lg:h-[75%] md:h-[65%] sm:h-[50%] flex justify-center items-center relative ${slideText} `} id="navbar"
         >
           {closeBtn && (
             <div
@@ -90,17 +101,17 @@ const Header = () => {
           )}
           <ul className="navbar w-full h-full flex justify-end pr-8 items-center space-x-4 xl:space-x-14 lg:space-x-12 md:space-x-6 sm:space-x-4 text-8px  xl:text-[13px] lg:text-[13px]  md:text-[11px] sm:text-[9px] text-white font-semibold  "
           >
-            <li className={`h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400 ${pathname === '/' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}
-            ><Link href="/" style={{ "--delay": 3 } as React.CSSProperties}>HOME</Link>
+            <li className={`h-full flex justify-center items-center  ${pathname === '/' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}
+            ><Link href="/" style={{ "--delay": 3 } as React.CSSProperties} className=" hover:underline hover:underline-offset-[12px] hover:text-green-400">HOME</Link>
             </li>
-            <li className={`h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400 ${pathname === '/about-us' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}>
-              <Link href="/about-us">ABOUT US</Link>
+            <li className={`h-full flex justify-center items-center ${pathname === '/about-us' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}>
+              <Link href="/about-us" className=" hover:underline hover:underline-offset-[12px] hover:text-green-400">ABOUT US</Link>
             </li>
-            <li className={`h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400 ${pathname === '/projects' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}
-            ><Link href="/projects" style={{ "--delay": 3 } as React.CSSProperties}>PROJECTS</Link>
+            <li className={`h-full flex justify-center items-center ${pathname === '/projects' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}
+            ><Link href="/projects" style={{ "--delay": 3 } as React.CSSProperties} className=" hover:underline hover:underline-offset-[12px] hover:text-green-400">PROJECTS</Link>
             </li>
-            <li className={`h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400 ${pathname === '/services' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}><Link href="/services" style={{ "--delay": 3 } as React.CSSProperties}>SERVICES</Link></li>
-            <li className="h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400"
+            <li className={`h-full flex justify-center items-center ${pathname === '/services' ? 'text-green-300 underline underline-offset-[12px]' : ''}`}><Link href="/services" style={{ "--delay": 3 } as React.CSSProperties} className=" hover:underline hover:underline-offset-[12px] hover:text-green-400">SERVICES</Link></li>
+            <li className="h-full flex justify-center items-center"
               onMouseLeave={() => setMoreDetails(false)}>
               <div
                 className="more_features relative "
