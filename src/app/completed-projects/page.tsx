@@ -6,7 +6,7 @@ import { completedProjects} from "../export";
 import Projectcard from '../components/projectcard';
 
 
-const completeProjects: React.FC = () => {
+const CompleteProjects: React.FC = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
 
 
@@ -44,4 +44,4 @@ const completeProjects: React.FC = () => {
   );
 };
 
-export default completeProjects;
+export default CompleteProjects;
