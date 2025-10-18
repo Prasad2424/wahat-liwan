@@ -11,7 +11,7 @@ const ContactPage = () => {
   const [message,setMessage]=useState("");
 
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
   
     if (!name || !email || !phone || !message) {
