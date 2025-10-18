@@ -84,7 +84,7 @@ const Footer = () => {
       </div>
       <div className="w-full h-[50px] bg-gray-400 flex justify-around  items-center xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft font-semibold text-[10px]">
         <p className="text-center">&copy;copyright2025</p>
-        <p>All rights reserved to G.Naga chittibabu</p>
+        <p>Developed by G.Naga chittibabu,J.savya and P. Veeraswamy</p>
       </div>
     </footer>
   )

@@ -22,7 +22,7 @@ const HomeCarousel = ({ onReadMoreClick }: HomeCarouselProps)  => {
   }, [])
 
   return (
-    <div className={`w-full h-max  relative transform transition-all duration-700 ease-out ${animate ? 'scale-100 opacity-105' : 'scale-90 opacity-50'
+    <div className={`w-full h-max  relative transform transition-all duration-700 ease-out ${animate ? 'scale-100 opacity-105' : 'scale-95 opacity-50'
       }`}>
       <Carousel
         autoPlay

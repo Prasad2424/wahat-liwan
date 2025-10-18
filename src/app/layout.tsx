@@ -4,6 +4,7 @@ import ClientSection from "./components/clientSection";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,8 +35,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
-        {children}
+        <Header />        
+        <Toaster />{children}
         <div className="py-10">
         </div>
         <ClientSection />

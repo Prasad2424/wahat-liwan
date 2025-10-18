@@ -3,6 +3,7 @@
 import React,{useRef} from 'react';
 import Image from 'next/image';
 import { about } from '../export';
+import CoreValueSection from '../components/corevalueSection';
 
 
 const AboutUs = () => {
@@ -79,6 +80,9 @@ const AboutUs = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        <CoreValueSection />
       </div>
     </section>
   );

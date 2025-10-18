@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import 'aos/dist/aos.css';
 import Aos from 'aos'
 import { projects } from "../export";
-import ProjectCard from "../cards/projectCard";
+import ProjectsectionCard from "../cards/projectsectionCard";
 import Image from "next/image";
 
 const ProjectSection = () => {
@@ -32,13 +32,13 @@ const ProjectSection = () => {
         </h1>
 
         <div
-          data-aos="zoom-in"
-          data-aos-delay="400"
+          data-aos="zoom out"
+          data-aos-delay="300"
           className="w-full  flex flex-wrap  gap-y-14 items-center justify-center projects_sector"
         >
           {projects.map((item,i) => (
             <div className="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-[45%] h-[420px]  flex items-center justify-center width90 " key={item.title} style={{"--delay":i} as React.CSSProperties} >
-              <ProjectCard imageurl={item.image} title={item.title} description={item.about} banner={item.banner} />
+              <ProjectsectionCard imageurl={item.image} title={item.title} description={item.about} banner={item.banner} />
             </div>
           ))}
         </div>

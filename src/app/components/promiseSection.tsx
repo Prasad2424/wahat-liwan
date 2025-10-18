@@ -10,7 +10,7 @@ const PromiseSection = () => {
   useEffect(() => {
     Aos.init({
       offset: 100,
-      duration: 400,
+      duration: 200,
       easing: "ease-in",
       once: true,
     });
@@ -30,12 +30,12 @@ const PromiseSection = () => {
 
       <div
         data-aos="zoom-in"
-        data-aos-delay="200"
-        className="w-full  flex flex-wrap  gap-y-6 xl:gap-y-2 lg:gap-y-2 md:gap-y-2 sm:gap-y-4  items-center justify-center "
+        data-aos-delay="50"
+        className="w-full  flex flex-wrap  gap-y-6 xl:gap-y-2 lg:gap-y-2 md:gap-y-2 sm:gap-y-4  items-center justify-center  "
       >
-        {ourpromises.map((item) => (
+        {ourpromises.map((item,i) => (
         <div key={item.title} className="promise_card xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-[45%] h-[450px]
-        xl:h-[450px] lg:h-[370px] md:h-[350px] sm:h-[350px] flex items-center justify-center width90 promise-section">
+        xl:h-[450px] lg:h-[370px] md:h-[350px] sm:h-[350px] flex items-center justify-center width90 promise-section promise_sector" style={{"--delay":i} as React.CSSProperties}>
           <PromiseCard imageurl={item.image} title={item.title} description={item.description} />
         </div>
         ))}

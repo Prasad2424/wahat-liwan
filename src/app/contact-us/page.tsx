@@ -1,11 +1,43 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "../../../node_modules/next/image";
-
+import toast from "react-hot-toast";
 
 const ContactPage = () => {
+  const [name,setName]=useState("");
+  const [email,setEmail]=useState("");
+  const [phone,setPhone]=useState("");
+  const [message,setMessage]=useState("");
 
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+  
+    if (!name || !email || !phone || !message) {
+      alert("Please fill in all fields before submitting.");
+      return;
+    }
+    console.log(name,email,phone,message);
+    
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, phone, message }),
+    });
+    console.log(res);
+    
+    if (res.ok) {
+      toast.success("Message sent successfullty");
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+    } else {
+      alert("Failed to send.");
+    }
+  };
+  
   return (
     <section
       className="w-full bg-cover bg-center flex flex-col items-center gap-y-6 "
@@ -88,13 +120,15 @@ const ContactPage = () => {
             CONTACT US
           </h2>
 
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label className="block text-xl font-medium text-gray-700 pb-2">
                 Full Name
               </label>
               <input
                 type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Enter your full name"
                 className="w-full pl-3  py-3 rounded-xl border border-slate-400 bg-gray-50 text-black text-sm focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-green-300 placeholder:text-gray-500"
               />
@@ -106,7 +140,9 @@ const ContactPage = () => {
               </label>
               <input
                 type="email"
+                value={email}
                 placeholder="Enter your email"
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full pl-3  py-3 rounded-xl border border-slate-400  bg-gray-50 text-black text-sm focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-green-300 placeholder:text-gray-500"
               />
             </div>
@@ -117,7 +153,9 @@ const ContactPage = () => {
               </label>
               <input
                 type="tel"
+                value={phone}
                 placeholder="Enter your phone number"
+                onChange={(e) => setPhone(e.target.value)}
                 className="w-full pl-3  py-3 rounded-xl border border-slate-400  bg-gray-50 text-black text-sm focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-green-300 placeholder:text-gray-500
                 "
               />
@@ -129,7 +167,9 @@ const ContactPage = () => {
               </label>
               <textarea
                 rows={4}
+                value={message}
                 placeholder="Ask a question here..."
+                onChange={(e) => setMessage(e.target.value)}
                 className="w-full pl-3 py-3 rounded-xl border border-slate-400  bg-gray-50 text-black resize-none text-sm focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-green-300 placeholder:text-gray-500"
               />
             </div>

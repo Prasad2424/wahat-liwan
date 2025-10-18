@@ -1,14 +1,14 @@
 import React from 'react'
-import Image from '../../../node_modules/next/image'
+import Image from 'next/image'
 
-interface ProjectCardProps {
+interface ProjectsectionCardProps {
     imageurl: string;
     title: string;
     description: string;
     banner:string;
   }
   
-  const ProjectCard: React.FC<ProjectCardProps> = ({ imageurl, title, description,banner }) => {  
+  const ProjectsectionCard: React.FC<ProjectsectionCardProps> = ({ imageurl, title, description,banner }) => {  
   return (
 <div className='w-[90%] xl:w-[80%] lg:w-[90%] md:w-[90%] sm:w-[90%] h-[420px] rounded-xl shadow-lg flex flex-col p-2'>
       <div className='w-full h-[280px]  z-0 relative  flex items-center justify-center'>
@@ -39,4 +39,4 @@ interface ProjectCardProps {
   )
 }
 
-export default ProjectCard;
+export default ProjectsectionCard;
