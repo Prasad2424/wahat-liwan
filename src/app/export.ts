@@ -23,7 +23,7 @@ export const corevalues = [
     {
         'image': '/images/mission.png',
         'title': 'Our Mission',
-        'about': 'Our mission is to deliver reliable, cost-effective, and high-quality technical manpower for electrical and HVAC projects. Backed by skilled engineers, certified technicians, and a commitment to safety and precision, we are the trusted partner for electro-mechanical solutions across residential, commercial, and industrial sectors.'
+        'about': 'Our mission is to deliver reliable, cost-effective, and high-quality technical manpower for electrical and HVAC projects. Backed by skilled engineers, certified technicians, and a commitment to safety and precision.'
     },
     {
         'image': '/images/house.png',
@@ -151,9 +151,9 @@ export const services: Service[] = [
         ]
     },
     {
-        title: "Ducking",
+        title: "Ducting",
         about: "Specialization",
-        image: "/ducking.png",
+        image: "/ducting.png",
         points: [
             "Design & Installation of plumbing, drainage and sanitary systems",
             "Pump & Tank Installation",
@@ -360,7 +360,10 @@ export const ongoingProjects: CompanyProjects[] = [
         company: "ABRAJ ELECTROMECHANICAL  WORK L.L.C",
         logo:"/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/logo.webp",
         projects: [
-            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img.png", title: "INTERNATIONAL TOWER" },
+            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img1.png", title: "E-167 villa @Emirates Hills" },
+            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img2.png", title: "P-47 @ Dubai Hills" },
+            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img3.png", title: "V004 villa @ Jumeirah Estate" },
+            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img4.png", title: "R-61 Villa @Emirates Hills" },
         ],
     },
     {
@@ -391,3 +394,6 @@ export const ongoingProjects: CompanyProjects[] = [
     },
 
 ];
+
+export const clients=["/clients/client1.jpeg","/clients/client2.png","/clients/client3.png","/clients/client4.png","/clients/client5.jpeg","/clients/client6.png","/clients/client7.png","/clients/client8.png","/clients/client9.png","/clients/client10.png","/clients/client11.png","/clients/client12.jpeg","/clients/client13.png","/clients/client14.jpeg","/clients/client15.jpeg","/clients/client16.png","/clients/client17.png","/clients/client18.png","/clients/client19.png"]
+  

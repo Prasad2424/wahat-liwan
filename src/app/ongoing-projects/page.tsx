@@ -13,14 +13,14 @@ const OngoingProjects: React.FC = () => {
   return (
     <div className="w-full   bg-white">
       <div className="w-full h-[300px] xl:h-screen lg:h-screen md:h-[620px] sm:h-[500px]   relative ">
-        <Image src="/images/hospitalitybannner.png" alt={"pic"} fill className="object-fill xl:object-cover lg:object-cover md:object-fill sm:object-cover" />
+        <Image src="/images/ongoingprojects-banner.png" alt={"pic"} fill className="object-cover xl:object-fill lg:object-cover md:object-fill sm:object-cover" />
         <div className="w-full h-full absolute left-0 top-0 bg-gray-900 opacity-60 "></div>
         <div className='xl:w-[40%] lg:w-[41%] md:w-[50%] sm:w-[50%] h-max absolute top-[25%] xl:left-1/14 xl:top-[40%] lg:left-1/8 lg:top-[40%] md:left-1/8  md:top-[50%] sm:left-1/9 sm:top-[50%] text-white  text-left p-2 width75 banner_content '>
           <h1 className='w-max xl:text-[24px] lg:text-[22px] md:text-[18px] sm:text-[14px] tracking-wider font-semibold slide-left welcomeText border p-2 rounded-2xl'>Ongoing projects</h1>
           <div className='slide-right h-max '>
             <div className='w-max space-y-0 xl:space-y2 lg:space-y-2 md:space-1.5 sm:space-y-1'>
               <h1 className='xl:h-[75px] lg:h-[60px] md:h-[50px] sm:h-[45px]  xl:text-[50px] lg:text-[42px] md:text-[36px] sm:text-[30px] font-bold titleText height22'><span className="bg-gradient-to-r from-green-500 via-green-00 to-gray-300  bg-clip-text text-transparent titleHeight">
-                What We Offer
+                What we are doing
               </span></h1>
             </div>
           </div>
@@ -35,7 +35,10 @@ const OngoingProjects: React.FC = () => {
           </div>
         </div>
       </div>
-      <div ref={projectsRef}>
+      <div ref={projectsRef} className="w-full h-full flex justify-center items-center flex-col space-y-4">
+          <div className='w-full h-[100px] flex items-center justify-center '>
+            <h1 className='font-bold text-[20px] xl:text-[44px] lg:text-[40px] md:text-[38px] sm:text-[32px] text-gray-800'>ONGOING PROJECTS</h1>
+          </div>
         {ongoingProjects.map((group, index) => (
           <Projectcard index={index}  companyName={group.company} projects={group.projects} logo={group.logo} key={index}/>
         ))}

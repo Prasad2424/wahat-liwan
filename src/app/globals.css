@@ -124,7 +124,7 @@ body {
     transition: 0.5s ease
   }
   nav{
-    width: 40% !important;
+    width: 60% !important;
     height: 100%;
     position: fixed;
     top: 0;
@@ -148,7 +148,7 @@ body {
     justify-content: start;
     text-align: left;
     height: 100vh;
-    width: 100%;
+    width: 100%;  
     z-index: 100;
     animation: none;
     overflow: hidden;
@@ -477,4 +477,15 @@ body {
   background-image: url("/images/services-banner.png");
   background-size: cover;
   background-position: center;  
+}
+
+@keyframes loop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-loop {
+  animation: loop 20s linear infinite;
+  display: flex;
+  width: 200%;
 }

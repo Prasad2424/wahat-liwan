@@ -24,9 +24,9 @@ const Footer = () => {
               </div>
             </div>
             <ul className="w-full h-[10%] flex items-center justify-center space-x-4 text-[20px] xl:text-[25px] lg:text-[24px] md:text-[23px] sm:text-[22px]">
-              <li className='bx bxl-instagram' ></li>
-              <li className='bx bxl-whatsapp'></li>
-              <li className='bx bxl-facebook' ></li>
+              <Link href={""}><li className='bx bxl-instagram' ></li></Link>
+              <Link href={""}><li className='bx bxl-whatsapp' ></li></Link>
+              <Link href={""}><li className='bx bxl-facebook' ></li></Link>
             </ul>
             <div className="w-full h-[70%] xl:h-[50%] lg:h-[50%] md:h-[50%] sm:h-[50%]  flex justify-center  items-start  ">
               <div className="w-full h-[100%]">
@@ -41,7 +41,7 @@ const Footer = () => {
             <ul className="flex  flex-col space-y-5 text-gray-100 textleft text-[11px] xl:text-[13px] lg:text-[12px] md:text-[10px] sm:text-[11px] xl:space-y-5 lg:space-y-4 md:space-y-3 sm:space-y-4">
               < li><a href="" className="hover:underline ">HOME</a></ li>
               < li><a href="/about-us" className="hover:underline ">ABOUT US</a></ li>
-              < li><a href="/projects" className="hover:underline ">PROJECTS</a></ li>
+              < li><a href="/ongoing-projects" className="hover:underline ">PROJECTS</a></ li>
               < li><a href="/services" className="hover:underline ">SERVICES</a></ li>
             </ul>
 
@@ -51,9 +51,9 @@ const Footer = () => {
           <div className="w-[90%] xl:w-full lg:w-full md:w-full sm:w-[80%]  h-3/4  flex flex-col space-y-5  text-center  padding-down ">
             <h3 className="font-bold text-white text-[13px] xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft">SPECIALIZATION IN</h3>
             <ul className="flex  flex-col space-y-5 text-gray-100 textleft text-[11px] xl:text-[13px] lg:text-[12px] md:text-[10px] sm:text-[11px] xl:space-y-5 lg:space-y-4 md:space-y-3 sm:space-y-4 ">
-              <li><a href="#" className="hover:underline">MECHANICAL</a></li>
-              <li><a href="#" className="hover:underline">DUCTING</a></li>
-              <li><a href="#" className="hover:underline">ELECTRICAL</a></li>
+              <li><a href="services" className="hover:underline">MECHANICAL</a></li>
+              <li><a href="services" className="hover:underline">DUCTING</a></li>
+              <li><a href="services" className="hover:underline">ELECTRICAL</a></li>
             </ul>
           </div>
         </div>
@@ -84,7 +84,7 @@ const Footer = () => {
       </div>
       <div className="w-full h-[50px] bg-gray-400 flex justify-around  items-center xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft font-semibold text-[10px]">
         <p className="text-center">&copy;copyright2025</p>
-        <p>Developed by G.Naga chittibabu,J.savya and P. Veeraswamy</p>
+        <p>Developed by G.Naga chittibabu,J.savya & P.Veeraswamy</p>
       </div>
     </footer>
   )

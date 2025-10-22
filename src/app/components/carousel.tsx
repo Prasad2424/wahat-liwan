@@ -9,8 +9,8 @@ type HomeCarouselProps = {
 
 
 const banners = [
-  '/images/companybanner.png',
-  '/images/companybanner.png',
+  '/images/banner2c.png',
+  '/images/banner3c.png',
 ]
 const HomeCarousel = ({ onReadMoreClick }: HomeCarouselProps)  => {
   const SLIDE_DURATION_MS = 10000
@@ -42,7 +42,7 @@ const HomeCarousel = ({ onReadMoreClick }: HomeCarouselProps)  => {
               src={src}
               alt={`Banner ${i + 1}`}
               fill
-              className="object-cover"
+              className="object-fill"
               priority={i === 0}
             />
                       </div>

@@ -38,8 +38,8 @@ export default function RootLayout({
         <Header />        
         <Toaster />{children}
         <div className="py-10">
-        </div>
         <ClientSection />
+        </div>
         <Footer />
       </body>
     </html>

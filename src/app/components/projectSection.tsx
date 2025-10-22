@@ -34,7 +34,7 @@ const ProjectSection = () => {
         <div
           data-aos="zoom out"
           data-aos-delay="300"
-          className="w-full  flex flex-wrap  gap-y-14 items-center justify-center projects_sector"
+          className="w-full  flex flex-wrap  gap-y-14 items-center justify-center projects_sector "
         >
           {projects.map((item,i) => (
             <div className="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-[45%] h-[420px]  flex items-center justify-center width90 " key={item.title} style={{"--delay":i} as React.CSSProperties} >

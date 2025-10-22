@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "../../../node_modules/next/image";
 import toast from "react-hot-toast";
+import Link from "next/link";
 
 const ContactPage = () => {
   const [name,setName]=useState("");
@@ -44,7 +45,7 @@ const ContactPage = () => {
     >
       <div className="w-full h-[300px] xl:h-screen lg:h-screen md:h-[620px] sm:h-[500px]   relative ">
         <Image src="/images/contact-us.png" alt={"pic"} fill className="object-fill xl:object-cover lg:object-cover md:object-fill sm:object-cover" />
-        <div className="w-full h-full absolute left-0 top-0 bg-gray-900 opacity-60 "></div>
+        <div className="w-full h-full absolute left-0 top-0 bg-gray-900 opacity-70 "></div>
         <div className='xl:w-[40%] lg:w-[41%] md:w-[50%] sm:w-[50%] h-max absolute top-[25%] xl:left-1/14 xl:top-[40%] lg:left-1/8 lg:top-[40%] md:left-1/8  md:top-[50%] sm:left-1/9 sm:top-[50%] text-white  text-left p-2 width75 banner_content '>
           <h1 className='w-max xl:text-[24px] lg:text-[22px] md:text-[18px] sm:text-[14px] tracking-wider font-semibold slide-left welcomeText border p-2 rounded-2xl'>Contact Us</h1>
           <div className='slide-right h-max '>
@@ -60,10 +61,9 @@ const ContactPage = () => {
           </div>
           <div className='w-full'>
             <ul className="w-full h-[50px] flex items-center space-x-4 text-[18px] xl:text-[30px] lg:text-[28px] md:text-[28px] sm:text-[24px] text-green-200">
-              <li className='bx bxl-twitter' ></li>
-              <li className='bx bxl-instagram' ></li>
-              <li className='bx bxl-whatsapp'></li>
-              <li className='bx bxl-facebook' ></li>
+            <Link href={""}><li className='bx bxl-instagram' ></li></Link>
+              <Link href={""}><li className='bx bxl-whatsapp' ></li></Link>
+              <Link href={""}><li className='bx bxl-facebook' ></li></Link>
             </ul>
           </div>
         </div>
