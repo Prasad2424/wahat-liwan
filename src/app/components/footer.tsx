@@ -30,7 +30,7 @@ const Footer = () => {
             </ul>
             <div className="w-full h-[70%] xl:h-[50%] lg:h-[50%] md:h-[50%] sm:h-[50%]  flex justify-center  items-start  ">
               <div className="w-full h-[100%]">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57758.0426401295!2d55.292652963918385!3d25.207347751459217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f664dc8decbad%3A0x98c27169c91a56b4!2sEmirates%20post%20PO%20Box!5e0!3m2!1sen!2sin!4v1760449919437!5m2!1sen!2sin" width="100%" height="100%"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d815.61564973858!2d55.3951615!3d25.3666734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5a245db7de29%3A0x3969952e4d8a959b!2sNoor%20Al%20Nabba%20Building!5e1!3m2!1sen!2sin!4v1761215634842!5m2!1sen!2sin" width="100%" height="100%" ></iframe>
               </div>
             </div>
           </div>
@@ -51,9 +51,9 @@ const Footer = () => {
           <div className="w-[90%] xl:w-full lg:w-full md:w-full sm:w-[80%]  h-3/4  flex flex-col space-y-5  text-center  padding-down ">
             <h3 className="font-bold text-white text-[13px] xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft">SPECIALIZATION IN</h3>
             <ul className="flex  flex-col space-y-5 text-gray-100 textleft text-[11px] xl:text-[13px] lg:text-[12px] md:text-[10px] sm:text-[11px] xl:space-y-5 lg:space-y-4 md:space-y-3 sm:space-y-4 ">
-              <li><a href="services" className="hover:underline">MECHANICAL</a></li>
-              <li><a href="services" className="hover:underline">DUCTING</a></li>
-              <li><a href="services" className="hover:underline">ELECTRICAL</a></li>
+              <li><a href="/services" className="hover:underline">MECHANICAL</a></li>
+              <li><a href="/services" className="hover:underline">PLUMBING</a></li>
+              <li><a href="/services" className="hover:underline">ELECTRICAL</a></li>
             </ul>
           </div>
         </div>

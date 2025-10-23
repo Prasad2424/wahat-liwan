@@ -50,6 +50,8 @@ export const corevalues = [
 
 ]
 
+export const groups=["/groups/group1.jpeg","/groups/group2.jpeg","/groups/group3.jpeg","/groups/group4.jpeg","/groups/group5.jpeg","/groups/group6.jpeg"]
+
 export const projects = [
     {
         'image': '/images/commercial-building.png',
@@ -112,17 +114,17 @@ export const contact = [
 
 export const Persons = [
     {
-        "imageurl": "/images/construction-banner.png",
+        "imageurl": "/teamMembers/companybanner.png",
         "name": "R.Rakesh",
         "specialization": "B.tech(Civil),M.tech(structure)"
     },
     {
-        "imageurl": "/images/construction-banner.png",
+        "imageurl": "/teamMembers/companybanner.png",
         "name": "M.Nagesh ",
         "specialization": "B.tech(Electrical),M.Tech(power Systems)"
     },
     {
-        "imageurl": "/images/construction-banner.png",
+        "imageurl": "/teamMembers/companybanner.png",
         "name": "E.Sharma",
         "specialization": "B.tech(Mechanical),M.tech(Thermel Engineering)"
     }
@@ -151,9 +153,9 @@ export const services: Service[] = [
         ]
     },
     {
-        title: "Ducting",
+        title: "Plumbing",
         about: "Specialization",
-        image: "/ducting.png",
+        image: "/plumbing.png",
         points: [
             "Design & Installation of plumbing, drainage and sanitary systems",
             "Pump & Tank Installation",
@@ -363,7 +365,6 @@ export const ongoingProjects: CompanyProjects[] = [
             { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img1.png", title: "E-167 villa @Emirates Hills" },
             { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img2.png", title: "P-47 @ Dubai Hills" },
             { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img3.png", title: "V004 villa @ Jumeirah Estate" },
-            { image: "/ongoing-projects/ABRAJ ELECTROMECHANICAL WORK L.L.C/img4.png", title: "R-61 Villa @Emirates Hills" },
         ],
     },
     {
@@ -396,4 +397,4 @@ export const ongoingProjects: CompanyProjects[] = [
 ];
 
 export const clients=["/clients/client1.jpeg","/clients/client2.png","/clients/client3.png","/clients/client4.png","/clients/client5.jpeg","/clients/client6.png","/clients/client7.png","/clients/client8.png","/clients/client9.png","/clients/client10.png","/clients/client11.png","/clients/client12.jpeg","/clients/client13.png","/clients/client14.jpeg","/clients/client15.jpeg","/clients/client16.png","/clients/client17.png","/clients/client18.png","/clients/client19.png"]
-  
+                                                                                                                             
