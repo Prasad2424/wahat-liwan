@@ -3,19 +3,16 @@ export const ourpromises = [
         'image': '/images/promise1.jpeg',
         'title': 'Our Promise as a contractor is to build your project',
         'description': 'The process of commercial building construction involves designing, planning, and constructing buildings intended for commercial use.These structures serve various purposes, such as retail stores, office buildings and educational institutions.',
-        'label': 'Read More'
     },
     {
         'image': '/images/promise2.jpeg',
-        'title': 'Expert Ducting & Ventilation Services',
-        'description': 'Our ducting specialists handle everything from layout planning to installation of HVAC systems. Whether it’s GI ducting, flexible ducts, or insulation, we deliver efficient airflow and climate control tailored to your building’s needs.',
-        'label': 'Read More'
+        'title': 'Proper safety induction Maintenances',
+        'description': 'Our certified electricians ensure seamless integration of power systems, lighting, and control panels. From conduit routing to final testing, we deliver safe, efficient, and regulation-compliant electrical solutions for residential, commercial, and industrial spaces.',
     },
     {
         'image': '/images/manpower.png',
         'title': 'Reliable Workforce, On-Demand',
         'description': 'We supply trained technicians, electricians, and ducting experts for short-term and long-term projects. Our manpower solutions are flexible, scalable, and backed by technical supervision to meet your project timelines.',
-        'label': 'Read More'
     },
 ]
 
@@ -27,7 +24,7 @@ export const corevalues = [
     },
     {
         'image': '/images/house.png',
-        'title': 'Electrical & Ducting Services',
+        'title': 'Electrical & Plumbing Services',
         'about': 'We specialize in supplying expert electricians and ducting technicians for infrastructure projects. From cable tray installations to GI duct fabrication and DB dressing, our workforce powers the systems that keep buildings functional and efficient',
         'points': [
             "Foster a professional and ethical work environment.",
