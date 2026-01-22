@@ -11,6 +11,8 @@ type HomeCarouselProps = {
 const banners = [
   '/images/banner2c.png',
   '/images/banner3c.png',
+  '/images/banner4c.png',
+  '/images/banner5c.png',
 ]
 const HomeCarousel = ({ onReadMoreClick }: HomeCarouselProps)  => {
   const SLIDE_DURATION_MS = 10000
