@@ -39,7 +39,7 @@ const AboutUs = () => {
       <div className="w-full xl:w-[90%] lg:w-[90%] md:w-[95%] sm:w-full mx-auto  rounded-lg shadow-lg p-8 bg-white" ref={aboutRef}
 >
         <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold text-center text-black mb-16">
-          About Us
+          About Us.........
         </h2>
 
         <div className="flex flex-col gap-20  w-full h-max ">
